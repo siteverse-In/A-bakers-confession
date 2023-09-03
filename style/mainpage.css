@@ -535,3 +535,9 @@ iframe {
     border: none;
     /* To remove the iframe border */
 }
+.overflow-horizontal {
+    overflow-x: scroll;
+}
+.overflow-vertical-hidden {
+    overflow-y: hidden;
+}
