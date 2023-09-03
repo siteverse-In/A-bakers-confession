@@ -337,6 +337,14 @@
     .hp-title .content-button {
         font-size: 16px;
         padding: 0px;
+        min-width: 170px;
+    }
+    .image_grid{
+        grid-template-columns: repeat(1, 300px);
+    }
+    .image_grid>div{
+        width: 300px;
+        height: 300px;
     }
 
     .arrow-button img {

@@ -349,9 +349,10 @@ input[type=text] {
 /*gallery*/
 .image_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 348px);
     justify-content: center;
     align-items: center;
+    grid-gap: 8px;
 }
 
 .image-grid {
@@ -407,11 +408,11 @@ button {
 
 .content img {
     max-width: 100%;
-    display: none;
+    /* display: none; */
 }
 
 .content img.active {
-    display: block;
+    /* display: block; */
 }
 
 .hp-title .content-button {
@@ -424,6 +425,7 @@ button {
     line-height: 112.664%;
     /* 59.001px */
     text-transform: uppercase;
+    min-width:500px ;
 }
 
 .gallery-section {
