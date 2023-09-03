@@ -305,7 +305,7 @@ textarea {
 /*end*/
 /*contact us*/
 .w-900 {
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -525,7 +525,7 @@ a {
 
 /* contact */
 .contact-form {
-    width: 60%;
+    width: 100%;
 }
 
 iframe {
@@ -535,9 +535,11 @@ iframe {
     border: none;
     /* To remove the iframe border */
 }
+
 .overflow-horizontal {
     overflow-x: scroll;
 }
+
 .overflow-vertical-hidden {
     overflow-y: hidden;
 }

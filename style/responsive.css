@@ -97,6 +97,21 @@
     }
 }
 
+@media (max-width: 925px) {
+    .contact-form {
+        max-width: 510px;
+        margin: auto;
+    }
+}
+@media (max-width: 630px) {
+    .contact-form {
+        width: 100%;
+        margin: auto;
+    }
+    .gap-40 {
+        gap: 16px;
+    }
+}
 @media only screen and (max-width: 580px) {
 
     .w-900,
