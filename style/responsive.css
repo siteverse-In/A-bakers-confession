@@ -103,15 +103,18 @@
         margin: auto;
     }
 }
+
 @media (max-width: 630px) {
     .contact-form {
         width: 100%;
         margin: auto;
     }
+
     .gap-40 {
         gap: 16px;
     }
 }
+
 @media only screen and (max-width: 580px) {
 
     .w-900,
@@ -191,13 +194,12 @@
     .menu-section {
         border: 0.924px solid #D6CCC9;
         width: 100% !important;
-        overflow-x: scroll;
         margin: 0 auto;
         padding: 0px 16px !important;
     }
 
     .menu-section .d-flex {
-        width: 1000px !important;
+        width: 100% !important;
     }
 
     .about-content p {
@@ -403,5 +405,20 @@
         /* Set an appropriate height or use other units as needed */
         border: none;
         /* To remove the iframe border */
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .menu-section {
+        border: 0.924px solid #D6CCC9;
+        width: 100% !important;
+        margin: 0 auto;
+        padding: 0px 16px !important;
+    }
+
+    .menu-container {
+        width: 100% !important;
+        flex-direction: column;
     }
 }
