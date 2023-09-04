@@ -228,7 +228,7 @@ textarea {
     width: 372px;
     margin-bottom: 32px;
     background: #FFF;
-    box-shadow: 21.123252868652344px 11.639344215393066px 40.0910758972168px 0px rgba(137, 78, 63, 0.30);
+  box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);
     padding: 45px;
     text-align: center;
 }
@@ -238,7 +238,7 @@ textarea {
     width: 460px;
     margin-bottom: 32px;
     background: #FFF;
-    box-shadow: 21.123252868652344px 11.639344215393066px 40.0910758972168px 0px rgba(137, 78, 63, 0.30);
+  box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);
     padding: 64px;
     text-align: center;
 }
@@ -545,4 +545,27 @@ iframe {
 
 .overflow-vertical-hidden {
     overflow-y: hidden;
+}
+.testimonial-txt{
+    margin-top: 24px;
+}
+.testimonial-txt span{
+    color: #000;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 161.664%; /* 25.866px */
+    letter-spacing: 0.32px;
+}
+.testimonial-txt{
+    border-radius: 24px;
+    text-align: center;
+background: #FFF;
+display: flex;
+padding: 49px 95px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);
 }
