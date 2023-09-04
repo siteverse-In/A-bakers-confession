@@ -463,4 +463,13 @@
     .testimonial-section button{
         text-align: center;
     }
+    .overflow-horizontal {
+    overflow-x: scroll;
+    }
+    .overflow-vertical-hidden {
+    overflow-y: hidden;
+    }
+    .main-div::before{
+        display: none;
+    }
 }
