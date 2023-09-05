@@ -564,7 +564,7 @@ align-items: center;
 gap: 10px;
 box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);
 }
-.main-div::before{
+.home.main-div::before{
         content: "";
     background-image: url(../images/bgwirecake.svg);
     display: block;
