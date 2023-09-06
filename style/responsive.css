@@ -311,7 +311,7 @@
     }
 
     .about-content {
-        margin: 24px;
+        margin: 16px;
     }
 
     .overflow-x {
@@ -440,6 +440,19 @@
         line-height: 132.664%;
         letter-spacing: 0.32px;
     }
+    .conimage-container img {
+        display: none;
+    }
+    .foot-top{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .home.main-div::before{
+        display: none;
+    }
+    .insta_txt{
+        display: none;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -456,9 +469,8 @@
         flex-direction: column;
     }
     .conimage-container img {
-        display: none;
-        max-width: 100%;
-        height: auto;
+        display: none !important;
+        
     }
     .testimonial-section button{
         text-align: center;
@@ -471,5 +483,8 @@
     }
     .main-div::before{
         display: none;
+    }
+    .foot-logo-icon{
+        margin: 0 auto;
     }
 }

@@ -577,3 +577,17 @@ box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);
     background-repeat: no-repeat;
     z-index: -1;
 }
+
+.insta_txt {
+  
+    padding: 16px 8px;
+    background:#AC4D6F;
+    color: #fff;
+    z-index: 94;
+    writing-mode: vertical-lr;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transform: rotate(0deg);
+    border: none;
+}
