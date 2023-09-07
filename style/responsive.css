@@ -35,7 +35,7 @@
     }
 }
 
-@media (max-width:850px) {
+@media (max-width:999px) {
     body.noscroll {
         overflow: hidden;
     }
@@ -230,7 +230,7 @@
     }
 
     .q-title {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .ab-mt h1 {
@@ -425,9 +425,7 @@
         width: 100%;
         margin: 0 auto;
     }
-    .testimonial-section {
-        margin-top: 54px;
-    }
+   
     .testimonial-txt{
         padding: 24px;
     }
@@ -486,5 +484,104 @@
     }
     .foot-logo-icon{
         margin: 0 auto;
+    }
+    .logo a{
+        margin: 0 auto;
+    }
+    .foot-top{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    .testimonial-txt {
+        border-radius: 8px;
+    }
+    .testimonial-section {
+    
+        padding: 24px;
+    }
+}
+@media only screen and (min-width:581px) and (max-width: 998px){
+    .menu_sec{
+        margin-top: 130px;
+        padding: 32px;
+    }
+    .cont-img{
+        display: none;
+    }
+    .hp-title .content-button{
+        font-size: 36px;
+    }
+    .ga-sec{
+        margin-top: 140px;
+        padding: 32px;
+    }
+    .image_grid {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center;
+        align-items: center;
+        grid-gap: 8px;
+    }
+    .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-container .cards {
+        transform: rotate(0deg) !important;
+        position: relative;
+        right: 0px !important;
+        height: 300px;
+        margin: 0 auto !important;
+    }
+    .hero-section {
+        flex-direction: column;
+        margin-top: 40px;
+        padding: 32px;
+    }
+    .right-hero{
+        flex-direction: row;
+        overflow-x: auto;
+    }
+    .testimonial-section .d-flex {
+        flex-direction: column-reverse;
+    }
+    .overflow-horizontal {
+        overflow-x: scroll;
+    }
+    .about-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-box .cards {
+        transform: rotate(0deg);
+        position: relative;
+        right: 0px;
+        margin: 0 auto;
+    }
+    .insta_txt{
+        display: none;
+    }
+    .contact-section{
+        padding: 32px;
+    }
+    .test-card2 .tm-outline {
+        width: 100%;
+    }
+    .test-card .tm-outline {
+        width: 100%;
+    }
+    .about-section {
+        margin-top: 64px;
+        padding: 32px;
+    }
+    .about-content{
+        padding: 0px 24px;
+    }
+    .testimonial-section{
+        margin-top: 32px;
+    }
+    .gallery-section{
+        margin-top: 64px;
     }
 }
