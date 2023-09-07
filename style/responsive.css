@@ -485,6 +485,7 @@
     .foot-logo-icon{
         margin: 0 auto;
     }
+<<<<<<< HEAD
     .logo a{
         margin: 0 auto;
     }
@@ -583,5 +584,9 @@
     }
     .gallery-section{
         margin-top: 64px;
+=======
+    .topblock{
+        margin-bottom: 32px;
+>>>>>>> f671e98ee3ca8a32e474f112103e05249b280f5d
     }
 }

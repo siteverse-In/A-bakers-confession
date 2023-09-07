@@ -215,11 +215,18 @@ textarea {
 /*end*/
 
 /*testimonial section*/
-.testimonial-section {
-    background-image: url('../images/testimonial-bg.svg');
+.testimonial_pg::after {
+    content: " ";
+    display: block;
+    width: 100vw;
+    height: 700px;
+    position: absolute;
+    top: 200px;
+    z-index:-1;
+    background-image: url('../images/testimonial-bg.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     margin-top: 164px;
 }
 .ts-sec h1{
@@ -261,6 +268,10 @@ textarea {
 
 .menu__sec {
     margin: 64px 0px;
+}
+.topblock{
+    background: #F9F9F9;
+    padding: 40px;
 }
 
 .w-960 p {
@@ -369,9 +380,8 @@ input[type=text] {
     color: #000000;
     border: none;
     cursor: pointer;
-
-    /* padding: 10px 20px;
-    border-radius: 5px; */
+    background-color: #ededed;
+    border-radius: 50px;
 }
 
 button {
