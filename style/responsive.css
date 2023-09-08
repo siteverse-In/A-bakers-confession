@@ -126,7 +126,15 @@
 }
 
 @media only screen and (max-width: 580px) {
+    .enlarged-image.active{
+        width: 85%;
+        height: fit-content;
+    }
+    .enlarged-image img{
+        width: 100%;
+        object-fit: contain;
 
+    }
     .w-900,
     .w-700,
     .w-960 {
@@ -265,6 +273,7 @@
     .left-hero h1 {
         line-height: 1.5;
         margin-top: 24px;
+        font-size: 24px !important;
     }
 
     .outline-btn {
@@ -470,8 +479,9 @@
         display: none !important;
         
     }
-    .testimonial-section button{
-        text-align: center;
+    .tm-link-div{
+        display: flex;
+        justify-content: center;
     }
     .overflow-horizontal {
     overflow-x: scroll;
@@ -485,7 +495,6 @@
     .foot-logo-icon{
         margin: 0 auto;
     }
-<<<<<<< HEAD
     .logo a{
         margin: 0 auto;
     }
@@ -498,9 +507,9 @@
         border-radius: 8px;
     }
     .testimonial-section {
-    
         padding: 24px;
     }
+
 }
 @media only screen and (min-width:581px) and (max-width: 998px){
     .menu_sec{
@@ -584,9 +593,8 @@
     }
     .gallery-section{
         margin-top: 64px;
-=======
+    }
     .topblock{
         margin-bottom: 32px;
->>>>>>> f671e98ee3ca8a32e474f112103e05249b280f5d
     }
 }

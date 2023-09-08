@@ -7,7 +7,7 @@ nav.addEventListener("click", function (e) {
     body.classList.add('right')
     setTimeout(() => {
       window.location.href = e.target.href
-    }, 150)
+    }, 130)
   }
 })
 
