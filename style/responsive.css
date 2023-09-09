@@ -126,6 +126,12 @@
 }
 
 @media only screen and (max-width: 580px) {
+    .about-section .about-main{
+        gap: 0px;
+    }
+    .about-main a{
+        text-align: center;
+    }
     .enlarged-image.active{
         width: 85%;
         height: fit-content;
