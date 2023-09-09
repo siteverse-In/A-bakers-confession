@@ -132,6 +132,9 @@
     .about-main a{
         text-align: center;
     }
+    .overflow-vertical-hidden .cards{
+        margin: 70px 0px;
+    }
     .enlarged-image.active{
         width: 85%;
         height: fit-content;
