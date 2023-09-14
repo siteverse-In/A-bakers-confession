@@ -47,6 +47,10 @@
             height: 348px;
             overflow: hidden;
         }
+        .con-link{
+            color: #2c2c2c;
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -72,7 +76,7 @@
         <main class="mt-64 mb-64 ga-sec">
             <div>
                 <div class="container">
-                    <button id="left-arrow" class="arrow-button" disabled><img src="images/left-arrow.svg"></button>
+                    <button id="left-arrow" class="arrow-button" ><img src="images/left-arrow.svg"></button>
                     <div class="button-container  hp-title">
                         <button class="content-button" id="button0">Celebration Cakes</button>
                         <button class="content-button" id="button1" disabled>Wedding cakes</button>
@@ -109,10 +113,11 @@
 
                <div class="image_content">
                 <div class="text-center w-960 pt-md-24">
-                    <p>Indulge in the allure of miniature delights – because every celebration deserves a cupcake.
+                    <p>
+                        Every love story deserves a masterpiece, and I’m here to craft a wedding cake that whispers the sweetest words of romance. From your first glace to the moments you say ‘I do,’ let your cake be a symbol of your unique journey, a confection designed with the same cake and devotion that brought you together. 
                     </p>
                     <p>
-                        Join us in the enchanting world of cupcakes, where every swirl and sprinkle is a testament to our passion for baking and our commitment to making your moments memorable.
+                        It is never too late to discuss about your wedding cake whether you know what you want or you are open to ideas. Let’s make your wedding day a truly unforgettable celebration of love, one slice at a time. To discuss your wedding cake please <a href="contact.html" class="con-link"  >contact me.</a>
                     </p>
                 </div>
                 <div class="image_grid" id="grid1">
@@ -132,8 +137,12 @@
 
                 <div class="image_content">
                     <div class="text-center w-960 pt-md-24">
-                       <p>Imagine cutting into a cake that defies convention,, a masterpiece that’s as much a feast for the eyes as it is for the palate. With my sculpted cakes, I bring your wildest confectionery dreams of life – from enchanting baby Pegasus that transport you to a fairy tale realm, to lifelike Sneaker cake that seem ready to wear. Each cake is a work of art, a three-dimensional canvas where imagination knows no bounds. Let your celebration be an extraordinary event where every slice unveils not just a dessert, but an experience that sparks awe and wonder. Elevate your occasion with a scultped cake that’s as unique as your story, leaving your guests amazed and your memories forever sweetened.
-                    </p>
+                        <p>
+                            Indulge in the allure of miniature delights – because every celebration deserves a cupcake.
+                        </p>
+                        <p>
+                            <a href="contact.html" class="con-link"  >Join us</a> in the enchanting world of cupcakes, where every swirl and sprinkle is a testament to our passion for baking and our commitment to making your moments memorable.
+                        </p>
                     </div>
                 <div class="image_grid" id="grid2">
                     <div><img src="images/cupcakes/IMG_1442.webp" onclick="enlargeImage(this)" alt="cupcakes cake"></div>
@@ -154,12 +163,12 @@
 
                 <div class="image_content">
                     <div class="text-center w-960 pt-md-24">
-                        <p>4Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, provident nobis! Quia obcaecati amet impedit dolorem in veniam quisquam soluta, labore facere, placeat excepturi nihil odio, tenetur ipsum sint ducimus!
-                        Modi beatae commodi labore voluptatem odit qui ipsum ea sit laudantium impedit sint repudiandae, recusandae laborum sequi, non illum architecto esse illo reprehenderit aspernatur, eaque ipsa. Blanditiis omnis illo ipsam?
+                        <p>
+                            Imagine cutting into a cake that defies convention,, a masterpiece that’s as much a feast for the eyes as it is for the palate. With my sculpted cakes, I bring your wildest confectionery dreams of life – from enchanting baby Pegasus that transport you to a fairy tale realm, to lifelike Sneaker cake that seem ready to wear.
                         </p>
                         <p>
-                           4Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nihil sed mollitia distinctio cumque cupiditate explicabo illum optio, neque debitis quisquam odit architecto assumenda, inventore repellat! Quam itaque a ut.
-                          </p>
+                            Each cake is a work of art, a three-dimensional canvas where imagination knows no bounds. Let your celebration be an extraordinary event where every slice unveils not just a dessert, but an experience that sparks awe and wonder. Elevate your occasion with a scultped cake that’s as unique as your story, leaving your guests amazed and your memories forever sweetened.
+                        </p> 
                     </div>
                 <div class="image_grid" id="grid3">
                     <div><img src="images/noveltycake/FB_IMG_1547539240413_Original.webp" onclick="enlargeImage(this)" alt="novelty cake"></div>
@@ -251,29 +260,29 @@
             }
 
             leftArrow.addEventListener("click", function () {
-                if (currentIndex > 0) {
-                    //buttons[currentIndex].style.display = "none";
-                    //images.forEach(image => image.style.display = "none");
-                    currentIndex--;
-                    showContent(currentIndex);
-                    rightArrow.disabled = false;
-                }
+                
                 if (currentIndex === 0) {
-                    leftArrow.disabled = true;
+                    //leftArrow.disabled = true;
+                    currentIndex=3
+                    showContent(currentIndex);
+                }else{
+                     currentIndex--;
+                    showContent(currentIndex);
                 }
+                console.log(currentIndex, buttons.length,"btnlength")
             });
 
             rightArrow.addEventListener("click", function () {
-                if (currentIndex < buttons.length - 1) {
-                    //buttons[currentIndex].style.display = "none";
-                    //images.forEach(image => image.style.display = "none");
+               
+                if (currentIndex === buttons.length - 1) {
+                    //rightArrow.disabled = true;
+                    currentIndex=0
+                    showContent(currentIndex);
+                }else{
                     currentIndex++;
                     showContent(currentIndex);
-                    leftArrow.disabled = false;
                 }
-                if (currentIndex === buttons.length - 1) {
-                    rightArrow.disabled = true;
-                }
+                console.log(currentIndex, buttons.length,"btnlength")
             });
 
 
