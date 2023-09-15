@@ -302,8 +302,7 @@ textarea {
 .menu-section {
     border: 0.924px solid #D6CCC9;
     width: 1000px;
-    margin: 0 auto;
-    padding: 0px 64px;
+    margin: 0 auto; 
 }
 
 .vertical-line {
@@ -609,4 +608,23 @@ box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);
 .menu-card img{
     transform: rotate(15deg);
 }
-
+.menu-br{
+    padding: 8px 64px;
+    border-bottom: 1px solid #E4E4E4;
+background: #FAFAFA;
+}
+.menu-container{
+    padding: 0px 64px;
+}
+.disc{
+    list-style-type: disc;
+}
+.disc{
+    color: #262626;
+font-family: Heebo;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 161.664%; /* 32.333px */
+letter-spacing: 0.4px;
+}

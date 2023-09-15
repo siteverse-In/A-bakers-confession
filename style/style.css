@@ -512,10 +512,9 @@ body {
 
 /* header */
 header {
+    border: 1px solid #D1D1D1;
     background: #FFF;
-    box-shadow: 35.50142288208008px 19.562007904052734px 67.38025665283203px 0px rgba(87, 87, 87, 0.09);
-    padding: 40px;
-  
+    padding: 24px;
 }
 
 header>div {

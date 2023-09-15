@@ -39,7 +39,17 @@
     body.noscroll {
         overflow: hidden;
     }
-
+    .menu-br{
+        flex-direction: column;
+        padding: 4px !important;
+    }
+    .menu-br .disc{
+        text-align: left;
+    }
+    
+    .menu-container{
+        padding: 0px 0px !important;
+    }
     header {
         padding: 0px;
         width: 0px;
@@ -128,6 +138,12 @@
 @media only screen and (max-width: 580px) {
     .about-section .about-main{
         gap: 0px;
+    }
+    .disc{
+        font-size: 10px !important;
+        }
+    .menu-br ul{
+        margin: 4px 0px !important;
     }
     .about-main a{
         text-align: center;
