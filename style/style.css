@@ -631,7 +631,8 @@ ol li {
 
 body.right {
     transition: transform 150ms ease-in-out;
-    animation: loadright 150ms ease-in-out 1;
+        transform: translateX(-100%);
+    /* animation: loadright 150ms ease-in-out 1; */
 }
 
 @keyframes loadright {

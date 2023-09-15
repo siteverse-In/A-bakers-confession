@@ -4,12 +4,12 @@ main {
 }
 
 .hero-section {
-    margin-top: 156px;
+    margin-top: 16px;
     gap: 126px;
 }
 
 .left-hero {
-    padding-top: 124px;
+    padding-top: 200px;
 }
 
 .left-hero span {
@@ -517,12 +517,15 @@ button {
 } */
 .enlarged-image.active {
     display: block;
-    top: 50%;
+    top: 57%;
+    width: fit-content;
+    height: 75vh;
 }
 
 .enlarged-image img {
     display: block;
-    width: 100%;
+    /* width: 100%; */
+    margin: 0 auto;
     height: 100%;
 }
 
@@ -583,7 +586,7 @@ box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);
     width: 100%;
     height: 460px;
     position: absolute;
-    top: 850px;
+    top: 950px;
     background-size: contain;
     background-position-x: -100px;
     background-repeat: no-repeat;
@@ -603,3 +606,7 @@ box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);
     transform: rotate(0deg);
     border: none;
 }
+.menu-card img{
+    transform: rotate(15deg);
+}
+
