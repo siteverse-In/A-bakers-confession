@@ -471,7 +471,7 @@ button {
     transform: translate(-50%, -50%);
     max-width: 100%;
     max-height: 1000%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
     z-index: 1000;
     transition: top 0.5s ease-in-out;
 }
@@ -515,11 +515,14 @@ button {
   display: block;
 } */
 .enlarged-image.active {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 48px;
     top: 57%;
     width: fit-content;
     height: 75vh;
 }
+
 
 .enlarged-image img {
     display: block;
@@ -540,6 +543,7 @@ a {
 .gallery-section .cards:hover {
     transform: rotate(-14.819deg) scale(1.18);
 }
+
 
 /* contact */
 .contact-form {

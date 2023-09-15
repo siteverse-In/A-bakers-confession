@@ -29,9 +29,13 @@ function enlargeImage(img) {
   const enlargedImg = document.getElementById("enlargedImg");
 
   enlargedImg.src = img.src;
+
+  enlargedImg.setAttribute("data-enlarged",img.getAttribute("data-index"))
+  enlargedImg.setAttribute("data-grid",img.closest(".image_grid").id)
   overlay.style.display = "block";
   enlargedContainer.classList.add("active");
   document.body.style.overflow = "hidden"; // Disable scrolling
+  
 }
 
 function closeEnlargedImage() {

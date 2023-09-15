@@ -82,7 +82,6 @@
                         <button class="content-button" id="button1" disabled>Wedding cakes</button>
                         <button class="content-button" id="button2" disabled>CupCakes</button>
                         <button class="content-button" id="button3" disabled>Novelty Cakes</button>
-
                     </div>
                     <button id="right-arrow" class="arrow-button"><img src="images/right-arrow.svg"></button>
                 </div>
@@ -206,7 +205,9 @@
 
         <div class="enlarged-overlay" id="overlay" onclick="closeEnlargedImage()"></div>
         <div class="enlarged-image" id="enlargedContainer">
-            <img id="enlargedImg" onclick="enlargeImage(this)" alt="Enlarged Image">
+            <button id="left-move" class="arrow-button" ><img src="images/left-arrow.svg"></button>
+                <img id="enlargedImg" onclick="enlargeImage(this)" alt="Enlarged Image" data-enlarged="">
+            <button id="right-move" class="arrow-button" ><img src="images/right-arrow.svg"></button>
         </div>
 
         <footer class="footer">
@@ -300,8 +301,42 @@
 
             showContent(currentIndex);
         });
-
-    
+        //add index to img
+        document.querySelectorAll(".image_grid").forEach((grid)=>{
+            grid.querySelectorAll("img").forEach((imgs,index)=>{
+                imgs.setAttribute("data-index",index)
+            })
+        })
+        //change img by given index
+        const enimg=document.querySelector("#enlargedImg")
+        document.querySelector("#right-move").addEventListener("click",function(){
+            
+            let dataindex=parseInt( enimg.getAttribute("data-enlarged"))+1
+            let datagrid=enimg.getAttribute("data-grid")
+            console.log(datagrid,dataindex,document.querySelectorAll("#"+datagrid+" img")[dataindex])
+                enimg.src=document.querySelectorAll("#"+datagrid+" img")[dataindex].src
+                enimg.setAttribute("data-enlarged",dataindex)
+                console.log(enimg,document.querySelectorAll("#"+datagrid+" img")[dataindex].src)
+        })
+        document.querySelector("#left-move").addEventListener("click",function(){
+            let dataindex=parseInt( enimg.getAttribute("data-enlarged"))-1
+                let datagrid=enimg.getAttribute("data-grid")
+            let allimgs=document.querySelectorAll("#"+datagrid+" img")
+            if(dataindex>0){
+                dataindex=allimgs.length-1
+                
+                enimg.src=allimgs[dataindex].src
+                enimg.setAttribute("data-enlarged",dataindex)
+                console.log(enimg,document.querySelectorAll("#"+datagrid+" img")[dataindex].src)
+            }
+            else{
+                console.log(datagrid,dataindex,document.querySelectorAll("#"+datagrid+" img")[dataindex])
+                enimg.src=allimgs[dataindex].src
+                enimg.setAttribute("data-enlarged",dataindex)
+                console.log(enimg,document.querySelectorAll("#"+datagrid+" img")[dataindex].src)
+            }
+          
+        })
     </script>
 </body>
 

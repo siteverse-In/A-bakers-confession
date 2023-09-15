@@ -518,14 +518,14 @@
         display: none;
     }
     .foot-logo-icon{
-        margin: 0 auto;
+        /* margin: 0 auto;  */
     }
     .logo a{
         margin: 0 auto;
     }
     .foot-top{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: fit-content(250px) fit-content(140px);
         gap: 16px;
     }
     .testimonial-txt {
