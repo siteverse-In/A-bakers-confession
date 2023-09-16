@@ -152,13 +152,16 @@
         margin: 70px 0px;
     }
     .enlarged-image.active{
-        width: 85%;
+        width: 70%;
         height: fit-content;
     }
-    .enlarged-image img{
+    #enlargedImg{
         width: 100%;
         object-fit: contain;
-
+    }
+    .enlarged-image.active{
+        gap: 16px;
+        justify-content: center;
     }
     .w-900,
     .w-700,

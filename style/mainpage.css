@@ -375,12 +375,12 @@ input[type=text] {
 }
 
 .arrow-button {
-
+    padding: 0px;
     color: #000000;
     border: none;
     cursor: pointer;
     background-color: #ededed;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
 button {

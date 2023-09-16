@@ -310,21 +310,30 @@
         //change img by given index
         const enimg=document.querySelector("#enlargedImg")
         document.querySelector("#right-move").addEventListener("click",function(){
-            
             let dataindex=parseInt( enimg.getAttribute("data-enlarged"))+1
-            let datagrid=enimg.getAttribute("data-grid")
-            console.log(datagrid,dataindex,document.querySelectorAll("#"+datagrid+" img")[dataindex])
-                enimg.src=document.querySelectorAll("#"+datagrid+" img")[dataindex].src
+                let datagrid=enimg.getAttribute("data-grid")
+            let allimgs=document.querySelectorAll("#"+datagrid+" img")
+            if(dataindex==allimgs.length){
+                dataindex=0
+
+                enimg.src=allimgs[dataindex].src
                 enimg.setAttribute("data-enlarged",dataindex)
                 console.log(enimg,document.querySelectorAll("#"+datagrid+" img")[dataindex].src)
+            }
+            else{
+                console.log(datagrid,dataindex,document.querySelectorAll("#"+datagrid+" img")[dataindex])
+                enimg.src=allimgs[dataindex].src
+                enimg.setAttribute("data-enlarged",dataindex)
+                console.log(enimg,document.querySelectorAll("#"+datagrid+" img")[dataindex].src)
+            }
         })
         document.querySelector("#left-move").addEventListener("click",function(){
             let dataindex=parseInt( enimg.getAttribute("data-enlarged"))-1
                 let datagrid=enimg.getAttribute("data-grid")
             let allimgs=document.querySelectorAll("#"+datagrid+" img")
-            if(dataindex>0){
+            if(dataindex<0){
                 dataindex=allimgs.length-1
-                
+
                 enimg.src=allimgs[dataindex].src
                 enimg.setAttribute("data-enlarged",dataindex)
                 console.log(enimg,document.querySelectorAll("#"+datagrid+" img")[dataindex].src)
