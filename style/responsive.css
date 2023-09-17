@@ -402,7 +402,9 @@
     .ga-sec {
         margin-top: 120px;
     }
-
+    .tm-sec {
+        margin-top: 0px;
+    }
     .pt-md-24 {
         padding: 0px 24px;
     }
@@ -551,6 +553,10 @@
         font-size: 36px;
     }
     .ga-sec{
+        margin-top: 140px;
+        padding: 32px;
+    }
+    .tm-sec{
         margin-top: 140px;
         padding: 32px;
     }
