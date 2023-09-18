@@ -658,9 +658,16 @@ box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);
     transform: rotate(15deg);
 }
 .menu-br{
-    padding: 8px 64px;
-    border-bottom: 1px solid #E4E4E4;
-background: #FAFAFA;
+    padding: 20px 63px;
+    border: 1px solid #ABE398;
+    background: #abe3984d;
+    border-radius: 83px;
+    margin-bottom: 20px;
+}
+.menu-br > p {
+    color: #367221;
+    font-weight: 300;
+    margin: 0px;
 }
 .menu-container{
     padding: 0px 64px;
@@ -688,4 +695,11 @@ letter-spacing: 0.4px;
 
 .list-style-none{ 
     list-style: none;
+}
+.p-0{
+    padding: 0px 20px !important;
+}
+
+.mx-auto{
+    margin-inline: auto;
 }

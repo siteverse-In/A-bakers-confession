@@ -41,7 +41,9 @@
     }
     .menu-br{
         flex-direction: column;
-        padding: 4px !important;
+        /* padding: 4px !important; */
+        max-width: 547px;
+        padding: 20px 20px;
     }
     .menu-br .disc{
         text-align: left;
@@ -144,10 +146,13 @@
         display: none;
     }
     .disc{
-        font-size: 10px !important;
+        font-size: 16px !important;
         }
-    .menu-br ul{
-        margin: 4px 0px !important;
+    .menu-br{
+        flex-direction: column;
+        /* padding: 4px !important; */
+        max-width: 547px;
+        padding: 10px 20px !important;    
     }
     .about-main a{
         text-align: center;
