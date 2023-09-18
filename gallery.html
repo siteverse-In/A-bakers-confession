@@ -42,7 +42,7 @@
         }
         .image_grid>div{
             border: 7px solid #FFF;
-            box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);
+            /*box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);*/
             width: 348px;
             height: 348px;
             overflow: hidden;
@@ -100,10 +100,6 @@
                 </div>
                 <div class="image_grid" id="grid0">
                     <div><img src="images/image.png" onclick="enlargeImage(this)" alt="celebration cake" class="active"></div>
-                    <div><img src="images/image1.png"  onclick="enlargeImage(this)" alt="celebration cake"></div>
-                    <div><img src="images/image2.png"  onclick="enlargeImage(this)" alt="celebration cake"></div>
-                    <div><img src="images/image3.png"  onclick="enlargeImage(this)" alt="celebration cake"></div>
-                    <div><img src="images/image4.png"  onclick="enlargeImage(this)" alt="celebration cake"></div>
                     <div><img src="images/image5.png"  onclick="enlargeImage(this)" alt="celebration cake"></div>
                     <div><img src="images/Celebcake/IMG_1443.webp"  onclick="enlargeImage(this)" alt="celebration cake"></div>
                     <div><img src="images/Celebcake/IMG_3014.webp"  onclick="enlargeImage(this)" alt="celebration cake"></div>
@@ -126,12 +122,9 @@
                     </p>
                 </div>
                 <div class="image_grid" id="grid1">
-                    <div><img src="images/image.png" onclick="enlargeImage(this)" alt="wedding cake" ></div>
-                    <div><img src="images/image1.png"  onclick="enlargeImage(this)" alt="wedding cake"></div>
                     <div><img src="images/image2.png"  onclick="enlargeImage(this)" alt="wedding cake"></div>
                     <div><img src="images/image3.png"  onclick="enlargeImage(this)" alt="wedding cake"></div>
                     <div><img src="images/image4.png"  onclick="enlargeImage(this)" alt="wedding cake"></div>
-                    <div><img src="images/image5.png"  onclick="enlargeImage(this)" alt="wedding cake"></div>
                     <div><img src="images/wedcake/IMG_1136.webp" onclick="enlargeImage(this)" alt="wedding cake"></div>
                     <div><img src="images/wedcake/PhotoRoom_20230731_152913.webp" onclick="enlargeImage(this)" alt="wedding cake"></div>
                     <div><img src="images/wedcake/IMG_4675.webp" onclick="enlargeImage(this)" alt="wedding cake"></div>
@@ -208,6 +201,7 @@
             <button id="left-move" class="arrow-button" ><img src="images/left-arrow.svg"></button>
                 <img id="enlargedImg" onclick="enlargeImage(this)" alt="Enlarged Image" data-enlarged="">
             <button id="right-move" class="arrow-button" ><img src="images/right-arrow.svg"></button>
+            <span class="gallery-close-btn" onclick="closeEnlargedImage()"></span>
         </div>
 
         <footer class="footer">

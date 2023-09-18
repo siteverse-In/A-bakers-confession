@@ -448,6 +448,43 @@ button {
     margin-top: 150px;
 }
 
+/* .gallery-close-btn{
+      border-radius: 50%;
+    background-color: rgb(255 255 255 / 25%);
+    color: #000;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 24px;
+    text-align: center;
+    cursor: pointer;
+} */
+.gallery-close-btn {
+  position: absolute;
+  right: 32px;
+  top: 0px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.gallery-close-btn:hover {
+  opacity: 1;
+}
+.gallery-close-btn:before, .gallery-close-btn:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 3px;
+  background-color: #fff;
+}
+.gallery-close-btn:before {
+  transform: rotate(45deg);
+}
+.gallery-close-btn:after {
+  transform: rotate(-45deg);
+}
+
 .image-container {
     position: relative;
     margin: 10px;
