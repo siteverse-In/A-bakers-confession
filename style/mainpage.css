@@ -367,6 +367,10 @@ input[type=text] {
     grid-gap: 8px;
 }
 
+.image_grid > div > img {
+    cursor: pointer;
+}
+
 .image-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -672,4 +676,16 @@ font-style: normal;
 font-weight: 300;
 line-height: 161.664%; /* 32.333px */
 letter-spacing: 0.4px;
+}
+
+.active {
+    border-bottom: 1px solid #000;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.list-style-none{ 
+    list-style: none;
 }
