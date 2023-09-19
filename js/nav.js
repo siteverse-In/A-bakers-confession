@@ -18,6 +18,7 @@ let header = document.querySelector("header")
 burgerbtn.addEventListener("click", function () {
   header.classList.toggle("mobside-open")
   document.querySelector("body").classList.toggle("noscroll")
+  document.querySelector(".float") && document.querySelector(".float").classList.toggle("d-none")
 })
 
 //gallery
