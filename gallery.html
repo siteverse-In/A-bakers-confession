@@ -169,7 +169,7 @@
                 <div class="image_content">
                     <div class="text-center w-960 pt-md-24">
                         <p>
-                            Imagine cutting into a cake that defies convention,, a masterpiece that’s as much a feast for the eyes as it is for the palate. With my sculpted cakes, I bring your wildest confectionery dreams of life – from enchanting baby Pegasus that transport you to a fairy tale realm, to lifelike Sneaker cake that seem ready to wear.
+                            Imagine cutting into a cake that defies convention, a masterpiece that’s as much a feast for the eyes as it is for the palate. With my sculpted cakes, I bring your wildest confectionery dreams of life – from enchanting baby Pegasus that transport you to a fairy tale realm, to lifelike Sneaker cake that seem ready to wear.
                         </p>
                         <p>
                             Each cake is a work of art, a three-dimensional canvas where imagination knows no bounds. Let your celebration be an extraordinary event where every slice unveils not just a dessert, but an experience that sparks awe and wonder. Elevate your occasion with a scultped cake that’s as unique as your story, leaving your guests amazed and your memories forever sweetened.
@@ -304,25 +304,29 @@
         })
         //change img by given index
         const enimg=document.querySelector("#enlargedImg")
-        document.querySelector("#right-move").addEventListener("click",function(){
-            let dataindex=parseInt( enimg.getAttribute("data-enlarged"))+1
-                let datagrid=enimg.getAttribute("data-grid")
-            let allimgs=document.querySelectorAll("#"+datagrid+" img")
-            if(dataindex==allimgs.length){
-                dataindex=0
 
-                enimg.src=allimgs[dataindex].src
-                enimg.setAttribute("data-enlarged",dataindex)
-                console.log(enimg,document.querySelectorAll("#"+datagrid+" img")[dataindex].src)
+        //arrow button press event handlers
+        document.querySelector("#right-move").addEventListener("click",rightMove)
+        document.querySelector("#left-move").addEventListener("click",leftMove)
+        //arrow key event handlers
+        document.onkeydown = function(e) {
+            switch (e.keyCode) {
+                case 37:
+                    if(document.querySelector(".enlarged-image").classList.contains("active")){
+                        console.log("left")
+                        leftMove()
+                    }
+                    break;
+                case 39:
+                    if(document.querySelector(".enlarged-image").classList.contains("active")){
+                        console.log("right")
+                        rightMove()
+                    }
+                    break;
             }
-            else{
-                console.log(datagrid,dataindex,document.querySelectorAll("#"+datagrid+" img")[dataindex])
-                enimg.src=allimgs[dataindex].src
-                enimg.setAttribute("data-enlarged",dataindex)
-                console.log(enimg,document.querySelectorAll("#"+datagrid+" img")[dataindex].src)
-            }
-        })
-        document.querySelector("#left-move").addEventListener("click",function(){
+        }
+        //fn totraverse image toward left
+        function leftMove(){
             let dataindex=parseInt( enimg.getAttribute("data-enlarged"))-1
                 let datagrid=enimg.getAttribute("data-grid")
             let allimgs=document.querySelectorAll("#"+datagrid+" img")
@@ -331,16 +335,28 @@
 
                 enimg.src=allimgs[dataindex].src
                 enimg.setAttribute("data-enlarged",dataindex)
-                console.log(enimg,document.querySelectorAll("#"+datagrid+" img")[dataindex].src)
             }
             else{
-                console.log(datagrid,dataindex,document.querySelectorAll("#"+datagrid+" img")[dataindex])
                 enimg.src=allimgs[dataindex].src
                 enimg.setAttribute("data-enlarged",dataindex)
-                console.log(enimg,document.querySelectorAll("#"+datagrid+" img")[dataindex].src)
             }
-          
-        })
+        }
+          //fn totraverse image toward right
+        function rightMove(){
+                let dataindex=parseInt( enimg.getAttribute("data-enlarged"))+1
+                let datagrid=enimg.getAttribute("data-grid")
+            let allimgs=document.querySelectorAll("#"+datagrid+" img")
+            if(dataindex==allimgs.length){
+                dataindex=0
+                enimg.src=allimgs[dataindex].src
+                enimg.setAttribute("data-enlarged",dataindex)
+            }
+            else{
+                enimg.src=allimgs[dataindex].src
+                enimg.setAttribute("data-enlarged",dataindex)
+            }
+        }
+
     </script>
 </body>
 
