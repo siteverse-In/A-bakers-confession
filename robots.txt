@@ -1,0 +1,5 @@
+# Welcome to A Bakers Confession.
+# This website is developed by SITEVERSE.IN
+
+User-agent:*
+Allow: 

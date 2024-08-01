@@ -7,7 +7,7 @@ nav.addEventListener("click", function (e) {
     body.classList.add('right')
     setTimeout(() => {
       window.location.href = e.target.href
-    }, 150)
+    }, 130)
   }
 })
 
@@ -18,6 +18,7 @@ let header = document.querySelector("header")
 burgerbtn.addEventListener("click", function () {
   header.classList.toggle("mobside-open")
   document.querySelector("body").classList.toggle("noscroll")
+  document.querySelector(".float") && document.querySelector(".float").classList.toggle("d-none")
 })
 
 //gallery
@@ -29,9 +30,13 @@ function enlargeImage(img) {
   const enlargedImg = document.getElementById("enlargedImg");
 
   enlargedImg.src = img.src;
+
+  enlargedImg.setAttribute("data-enlarged",img.getAttribute("data-index"))
+  enlargedImg.setAttribute("data-grid",img.closest(".image_grid").id)
   overlay.style.display = "block";
   enlargedContainer.classList.add("active");
   document.body.style.overflow = "hidden"; // Disable scrolling
+  
 }
 
 function closeEnlargedImage() {

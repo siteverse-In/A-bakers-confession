@@ -512,9 +512,9 @@ body {
 
 /* header */
 header {
+    border-bottom: 1px solid #D1D1D1;
     background: #FFF;
-    box-shadow: 35.50142288208008px 19.562007904052734px 67.38025665283203px 0px rgba(87, 87, 87, 0.09);
-    padding: 40px;
+    padding: 24px;
 }
 
 header>div {
@@ -547,7 +547,7 @@ header .logo>a {
 }
 
 header .logo {
-    height: 50px;
+    height: 80px;
 }
 
 header .logo>div {
@@ -577,6 +577,11 @@ header nav a:hover {
     background-color: transparent;
     color: #000000;
 }
+.outline-btn:hover{
+    background: #AC4D6F;
+    color: #FFF;
+    border: none;
+}
 
 button {
     cursor: pointer;
@@ -586,7 +591,8 @@ button {
     padding: 13px 12.5px 0px 12.5px;
     border: 0.874px solid #FFF;
     background: linear-gradient(137deg, #FFF 0%, #FFF 100%);
-    box-shadow: 35.57959747314453px 19.605083465576172px 67.52862548828125px 0px rgba(137, 78, 63, 0.30);
+    /* box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30); */
+
 }
 
 body.left {
@@ -624,7 +630,8 @@ ol li {
 
 body.right {
     transition: transform 150ms ease-in-out;
-    animation: loadright 150ms ease-in-out 1;
+        transform: translateX(-100%);
+    /* animation: loadright 150ms ease-in-out 1; */
 }
 
 @keyframes loadright {
