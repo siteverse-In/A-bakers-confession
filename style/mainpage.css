@@ -546,9 +546,6 @@ button {
 
 
 .enlarged-image.active {
-  display: block;
-} */
-.enlarged-image.active {
     display: flex;
     align-items: center;
     gap: 48px;
@@ -634,22 +631,7 @@ box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);
     overflow-y: hidden;
 }
 
-/* steps */
-.steps-section{
-    background-color: #AC4D6F;
-    color: #fff;
-}
-.steps-section h3,.steps-section p{
-    font-family: International !important;
-    font-weight: 300;
-}
-.step-div{
-    max-width: 423px;
-}
 
-.steps-section>h3{
-    font-size: 52px;
-}
 .insta_txt {
   
     padding: 16px 8px;
@@ -711,4 +693,46 @@ letter-spacing: 0.4px;
 
 .mx-auto{
     margin-inline: auto;
+}
+
+/* steps */
+.steps-section{
+    background-color: #AC4D6F;
+    color: #fff;
+    padding: 140px 0px;
+}
+.steps-section h3,.step-title{
+    font-family: International ;
+    font-weight: 200;
+    margin: 0px;
+    
+}
+.step-div{
+    max-width: 423px;
+    width: 100%;
+    gap: 16px;
+}
+.step-div>h3{
+    color: rgba(255, 255, 255, 0.42);
+    font-size: 36px;
+}
+.step-title{
+    font-size: 24px;
+}
+.step-text{
+    font-family: Heebo, sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    margin: 0px;
+    max-width: 380px;
+}
+.steps-section>h3{
+    font-size: 52px;
+    margin-bottom: 120px;
+}
+.step-container{
+    gap: 120px;
+}
+.step-container>div{
+    gap: 80px;
 }
