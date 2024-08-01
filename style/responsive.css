@@ -512,6 +512,21 @@
     .insta_txt{
         display: none;
     }
+    .step-container>div{
+        flex-direction: column;
+    }
+    .step-container img{
+        width: 200px;
+    }
+    .step-container{
+        align-items: center;
+    }
+    .step-container{
+        padding: 0px 40px;
+    }
+    .steps-section h3{
+        font-size: 36px;
+    }
 }
 
 @media (max-width: 1024px) {

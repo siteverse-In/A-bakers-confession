@@ -1,4 +1,4 @@
-main {
+main,.main {
     max-width: 1160px;
     margin: 0 auto;
 }
@@ -532,6 +532,8 @@ button {
 
 }
 
+
+
 @keyframes pushdown {
     0% {
         top: 0%;
@@ -542,23 +544,7 @@ button {
     }
 }
 
-/* .enlarged-image {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 980px;
-  height: 980px; 
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  transition: opacity 0.5s ease-in-out; 
-  opacity: 0;
-}
 
-.enlarged-image.active {
-  display: block;
-} */
 .enlarged-image.active {
     display: flex;
     align-items: center;
@@ -641,6 +627,11 @@ box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);
     z-index: -1;
 }
 
+.overflow-vertical-hidden {
+    overflow-y: hidden;
+}
+
+
 .insta_txt {
   
     padding: 16px 8px;
@@ -703,6 +694,7 @@ letter-spacing: 0.4px;
 .mx-auto{
     margin-inline: auto;
 }
+
 /* package section */
 .package-section h1 , span{
     text-transform: uppercase;
@@ -941,3 +933,47 @@ button.next {
     text-transform: uppercase; 
     font-family: 'International', sans-serif;
   }
+
+
+/* steps */
+.steps-section{
+    background-color: #AC4D6F;
+    color: #fff;
+    padding: 140px 0px;
+}
+.steps-section h3,.step-title{
+    font-family: International ;
+    font-weight: 200;
+    margin: 0px;
+    
+}
+.step-div{
+    max-width: 423px;
+    width: 100%;
+    gap: 16px;
+}
+.step-div>h3{
+    color: rgba(255, 255, 255, 0.42);
+    font-size: 36px;
+}
+.step-title{
+    font-size: 24px;
+}
+.step-text{
+    font-family: Heebo, sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    margin: 0px;
+    max-width: 380px;
+}
+.steps-section>h3{
+    font-size: 52px;
+    margin-bottom: 120px;
+}
+.step-container{
+    gap: 120px;
+}
+.step-container>div{
+    gap: 80px;
+}
+
