@@ -1,10 +1,22 @@
 @media only screen and (min-width:1000px) {
+    .w-1300{
+        width: 1300px;
+        margin: 0 auto;
+    }
+    .m-sec{ 
+        width: 1200px;
+        margin: 0 auto;
+      }
     .w-900 {
         width: 900px;
         margin: 0 auto;
-    }
+    } 
     .w-620{
         width: 620px;
+        margin: 0 auto;
+    }
+    .w-760 {
+        width: 760px;
         margin: 0 auto;
     }
     .w-700 {
