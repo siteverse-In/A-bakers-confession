@@ -708,6 +708,7 @@ letter-spacing: 0.4px;
     color: #AC4D6F;
     font-size: 64px;
     font-weight: 400;
+    font-family: 'International', sans-serif;
 }
 .package-section p{
     color: #636363; 
@@ -728,6 +729,7 @@ letter-spacing: 0.4px;
     border: none;
     height: 62px;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 .secondary-btn{
     border: 0.71px solid #000000;
@@ -738,6 +740,7 @@ letter-spacing: 0.4px;
     font-size: 16px;
     font-weight: 400; 
     text-transform: uppercase;
+    white-space: nowrap;
 } 
 .header-section {
     display: flex;
@@ -779,7 +782,9 @@ letter-spacing: 0.4px;
     margin-top: -10px;
 } 
 .pc-section{
+    padding: 0px 32px;
     padding-top: 124px;
+
 }
 .package-container {
     display: flex;
@@ -789,8 +794,9 @@ letter-spacing: 0.4px;
 } 
 .slider {
     position: relative;
-    width: 620px;
-    height: 720px;
+    max-width: 620px;
+    max-height: 720px;
+    height: 100%;
     overflow: hidden;
     margin-right: 50px;
 } 
@@ -861,10 +867,11 @@ button.next {
 .menus-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 0px 32px;
+    gap: 64px;
 } 
 .column {
-    width: 45%;
     margin-bottom: 40px;
 } 
 .column h2 {
@@ -882,21 +889,19 @@ button.next {
 .column li {
     font-size: 15px;
     line-height: 1.8;
-    margin-bottom: 10px;
     display: flex; 
     font-weight: 300;
     color: #000000;
 }
 .column li {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.8;
-    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }  
-.column li::after {
+/* .column li::after {
     content: "";
     flex-grow: 1;
     border-bottom: 1px dashed #444444;
@@ -904,7 +909,13 @@ button.next {
     margin-right: 10px;
     width: 150px;
 
-} 
+}  */
+.bdline{
+    flex-grow: 1;
+    border-bottom: 1px dashed #444444;
+    height: 1px;
+    margin: 0 12px;
+}
 .column span {
     color: #000000;
     font-weight: 500;
@@ -915,6 +926,9 @@ button.next {
     color: #b73e42;
     margin-right: 10px;
     font-weight: bold;
+}
+.column div{
+    align-items: center;
 }
 .vl {
     border-left: 0.75px solid #E8E8E8;
@@ -933,7 +947,7 @@ button.next {
     text-transform: uppercase; 
     font-family: 'International', sans-serif;
   }
-
+ 
 
 /* steps */
 .steps-section{

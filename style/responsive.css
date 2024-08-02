@@ -1,10 +1,10 @@
 @media only screen and (min-width:1000px) {
-    .w-1300{
+    /* .w-1300{
         width: 1300px;
         margin: 0 auto;
-    }
+    } */
     .m-sec{ 
-        width: 1200px;
+        max-width: 1200px;
         margin: 0 auto;
       }
     .w-900 {
@@ -45,9 +45,17 @@
         margin-top: 140px;
         margin-bottom: 100px;
     }
+    
 }
 
 @media (max-width:999px) {
+    .package-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider{
+        margin-right: 0px;
+    }
     body.noscroll {
         overflow: hidden;
     }
@@ -141,6 +149,9 @@
         flex-direction: column;
         gap: 64px;
     }
+    .pkg-div{
+        gap:16px !important;
+    }
 }
 
 @media (max-width: 630px) {
@@ -155,6 +166,24 @@
 }
 
 @media only screen and (max-width: 580px) {
+    .number{
+        font-size: 53px;
+    }
+    .royal{
+        font-size: 16px;
+    }
+    .opulence{
+        font-size: 26px;
+    }
+    .primary-btn,.secondary-btn{
+        padding: 15px 28px;
+    }
+    .package-container ul{
+        padding-left: 24px;
+    }
+    .column li{
+        max-width: 160px;
+    }
     .about-section .about-main{
         gap: 0px;
     }
@@ -547,15 +576,8 @@
     .primary-btn , .secondary-btn{
         font-size: 12px;
     }
-    .menus-section{
-        display: flex;
-        flex-direction: column;
-    }
-    .column{
-        width: 100%; 
-        padding: 0px 24px;
-        margin: 0 auto;
-    }
+   
+    
     .column li , .column span{
         font-size: 12px;
     }
@@ -706,5 +728,14 @@
     }
     .topblock{
         margin-bottom: 32px;
+    }
+}
+@media (max-width:800px){
+    .column{
+        width: 100%; 
+        margin: 0 auto;
+    }
+    .vl{
+        display: none;
     }
 }
