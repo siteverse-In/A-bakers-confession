@@ -976,4 +976,39 @@ button.next {
 .step-container>div{
     gap: 80px;
 }
-
+/* PKG SECTION */
+.pkg img{
+    width: 236px;
+    height: 228px;
+    border-radius: 50%;
+}
+.pkg-div{
+    align-items: center;
+    flex-grow: 1;
+}
+.pkg-div .pkg-text{
+    max-width: 319px;
+}
+.pkg-mid{
+ border-width :0px 1px 0px 1px ;
+ border-style: solid;
+ border-color: #D7D7D7;
+}
+.pkg>h3{
+    font-family: International;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 120px;
+}
+.pkg-text{
+    font-size: 16;
+    font-weight: 200;
+    text-align: center;
+}
+.pkg-price{
+    font-size: 19px;
+}
+.pkg{
+    margin-bottom: 200px;
+}
