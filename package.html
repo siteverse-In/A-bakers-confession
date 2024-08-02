@@ -92,7 +92,7 @@
 
                 <div class="header-section w-960">
                     <div class="number">01</div>
-                    <div class="title">
+                    <div class="title" id="royalopulence">
                         <span class="royal">ROYAL</span>
                         <span class="opulence">OPULENCE</span>
                     </div>
@@ -103,8 +103,9 @@
                     <div class="slider">
                         <button class="prev"><img src="/images/rightarrow.svg"></button>
                         <div class="slides">
-                            <img src="/images/pk-img.png" alt="Royal Opulence Cake">
-                            <img src="/images/bgwirecake.svg" alt="Royal Opulence Cake"> 
+                            <img src="/images/royalop/royalgrand.webp" alt="Royal Opulence Cake">
+                            <img src="/images/royalop/royalred.webp" alt="Royal Opulence Cake">
+                            <img src="/images/royalop/royalwhite.webp" alt="Royal Opulence Cake">
                         </div>
                         <button class="next"><img src="/images/leftarrow.svg"></button>
                     </div>
@@ -143,7 +144,7 @@
 
                 <div class="header-section w-960 ">
                     <div class="number">02</div>
-                    <div class="title">
+                    <div class="title" id="styledelegance">
                         <span class="royal">Styled </span>
                         <span class="opulence">Elegance</span>
                     </div>
@@ -154,8 +155,25 @@
                     <div class="slider">
                         <button class="prev"><img src="/images/rightarrow.svg"></button>
                         <div class="slides">
-                            <img src="/images/pk-img.png" alt="Royal Opulence Cake">
-                            <img src="/images/bgwirecake.svg" alt="Royal Opulence Cake"> 
+                            <img src="/images/styled/stlyedcake.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/8I6A7599.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/8I6A7600.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/8I6A7610.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/8I6A7617.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/8I6A7627.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/8I6A7701.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/ANGELHOTEL197.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/ANGELHOTEL203.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/IMG_5069.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/IMG_5075.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/IMG_5448.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/IMG_5468.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/IMG_7428.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/IMG_8388.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/IMG_9847.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/PhotoRoom_20230731_152913.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/PhotoRoom_20230731_155443.webp" alt="styled elegance cakes" />
+                            <img src="/images/styled/PhotoRoom_20230806_191435.webp" alt="styled elegance cakes" />
                         </div>
                         <button class="next"><img src="/images/leftarrow.svg"></button>
                     </div>
@@ -189,7 +207,7 @@
 
                 <div class="header-section w-960">
                     <div class="number">03</div>
-                    <div class="title">
+                    <div class="title" id="charmingsimplicity">
                         <span class="royal">Charming</span>
                         <span class="opulence">Simplicity</span>
                     </div>
@@ -200,8 +218,8 @@
                     <div class="slider">
                         <button class="prev"><img src="/images/rightarrow.svg"></button>
                         <div class="slides">
-                            <img src="/images/pk-img.png" alt="Royal Opulence Cake">
-                            <img src="/images/bgwirecake.svg" alt="Royal Opulence Cake"> 
+                            <img src="/images/charming/charming1.webp" alt="charming simplicity cakes">
+                            <img src="/images/charming/charming2.webp" alt="charming simplicity cakes">
                         </div>
                         <button class="next"><img src="/images/leftarrow.svg"></button>
                     </div>
@@ -338,24 +356,38 @@
     </div> 
     
      <script>
-        const slides = document.querySelector('.slides');
-const images = document.querySelectorAll('.slides img');
+        document.addEventListener('DOMContentLoaded', () => {
+    const sliders = document.querySelectorAll('.slider');
 
-let currentIndex = 0;
+    sliders.forEach(slider => {
+        let currentIndex = 0;
+        const slides = slider.querySelectorAll('.slides img');
+        const prevButton = slider.querySelector('.prev');
+        const nextButton = slider.querySelector('.next');
 
-document.querySelector('.next').addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % images.length;
-    updateSlider();
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function showNextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function showPrevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        nextButton.addEventListener('click', showNextSlide);
+        prevButton.addEventListener('click', showPrevSlide);
+
+        // Initially display the first slide
+        showSlide(currentIndex);
+    });
 });
-
-document.querySelector('.prev').addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    updateSlider();
-});
-
-function updateSlider() {
-    slides.style.transform = `translateX(-${currentIndex * 620}px)`;
-}
 
      </script>
 </body>

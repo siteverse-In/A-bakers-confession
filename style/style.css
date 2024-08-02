@@ -433,6 +433,9 @@ body {
 .justify-around {
     justify-content: space-around;
 }
+.flex-wrap{
+    flex-wrap: wrap;
+}
 
 .d-grid {
     display: grid;
