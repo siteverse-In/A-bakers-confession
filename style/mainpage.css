@@ -953,7 +953,7 @@ button.next {
 .steps-section{
     background-color: #AC4D6F;
     color: #fff;
-    padding: 140px 0px;
+    padding: 100px 0px;
 }
 .steps-section h3,.step-title{
     font-family: International ;
@@ -968,24 +968,26 @@ button.next {
 }
 .step-div>h3{
     color: rgba(255, 255, 255, 0.42);
-    font-size: 36px;
+    font-size: 30px;
 }
 .step-title{
-    font-size: 24px;
+    font-size: 22px;
+    line-height: 1.2;
 }
 .step-text{
     font-family: Heebo, sans-serif;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0px;
     max-width: 380px;
 }
 .steps-section>h3{
-    font-size: 52px;
-    margin-bottom: 120px;
+    font-size: 40px;
+    margin-bottom: 90px;
+    line-height: 1.2;
 }
 .step-container{
-    gap: 120px;
+    gap: 90px;
 }
 .step-container>div{
     gap: 80px;
