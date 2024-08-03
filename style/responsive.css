@@ -561,6 +561,9 @@
     .steps-section h3{
         font-size: 24px;
     }
+    .step-container>div{
+        gap:40px;
+    }
     .package-section h1 , .pc-color , .m-sec-tit h2{
         font-size: 24px !important;
     }
