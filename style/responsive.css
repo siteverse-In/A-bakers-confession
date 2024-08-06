@@ -203,7 +203,7 @@
         text-align: center;
     }
     .overflow-vertical-hidden .cards{
-        margin: 70px 0px;
+        margin: 40px 0px 16px 0px;
     }
     .enlarged-image.active{
         width: 70%;
@@ -268,7 +268,7 @@
     }
 
     .w-960 p {
-        font-size: 12px !important;
+        font-size: 14px !important;
         text-align: left;
     }
 
@@ -303,7 +303,7 @@
     }
 
     .about-content p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .about-container {
@@ -349,7 +349,7 @@
     }
 
     .left-hero p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .left-hero h1 {
@@ -573,9 +573,21 @@
     .package-section{
         padding: 24px;
     }
+    button.prev, button.next{
+        height: 50px;
+        width: 50px;
+    }
+    .prev img, .next img {
+        width: 14px;
+        height: 44px;
+    }
+    .pkg>h3{
+        margin-top: 98px;
+    margin-bottom: 72px;
+    }
     .package-section .d-flex {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .primary-btn , .secondary-btn{
         font-size: 12px;
