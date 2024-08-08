@@ -24,6 +24,7 @@
 @media (max-width: 400px) {
     .aboutme {
         padding: 0px 0px !important;
+        margin-bottom: 64px;
     }
 }
 
