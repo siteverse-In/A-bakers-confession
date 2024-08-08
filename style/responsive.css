@@ -3,6 +3,9 @@
         width: 1300px;
         margin: 0 auto;
     } */
+     .hidden{
+        display: none;
+     }
     .m-sec{ 
         max-width: 1200px;
         margin: 0 auto;
@@ -166,6 +169,22 @@
 }
 
 @media only screen and (max-width: 580px) {
+    .contents ul li {
+        font-size: 14px;
+    }
+    .package-container {
+        display: flex;
+        gap: 16px;
+    }
+    .notice {
+        background-color: #FFF0F0;
+        padding: 16px;
+        font-size: 14px;
+        transform: translate(0px, 16px);
+    }
+    .contents .pt-24 {
+        padding-top: 16px;
+    }
     .number{
         font-size: 53px;
     }
