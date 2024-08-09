@@ -923,7 +923,7 @@ button.next {
     font-size: 15px;
 } 
 .column li:before {
-    content: " ";
+    content: "•";
     color: #b73e42;
     margin-right: 10px;
     font-weight: bold;
@@ -948,7 +948,9 @@ button.next {
     text-transform: uppercase; 
     font-family: 'International', sans-serif;
   }
- 
+ ul.price li{
+    list-style: none;
+ }
 
 /* steps */
 .steps-section{
