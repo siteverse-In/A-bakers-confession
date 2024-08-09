@@ -122,6 +122,9 @@
     header .logo>div {
         display: block;
         height: 30px;
+        position: fixed;
+        left: 24px;
+        width: 0px;
     }
 
     nav {
@@ -669,6 +672,8 @@
     }
     .logo a{
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
     .foot-top{
         display: grid;
