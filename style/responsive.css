@@ -225,8 +225,14 @@
     .about-main a{
         text-align: center;
     }
+    .testimonial-section {
+        margin-top: 32px;
+    }
     .overflow-vertical-hidden .cards{
-        margin: 40px 0px 0px 0px;
+        margin: 24px 0px 0px 0px;
+    }
+    .right-hero .cards{
+        margin-bottom: 24px;
     }
     .enlarged-image.active{
         width: 70%;
