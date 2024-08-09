@@ -1,8 +1,5 @@
 @media only screen and (min-width:1000px) {
-    /* .w-1300{
-        width: 1300px;
-        margin: 0 auto;
-    } */
+    
      .hidden{
         display: none;
      }
@@ -52,6 +49,10 @@
 }
 
 @media (max-width:999px) {
+
+    .menu-title{
+        margin-top: 138px;
+    }
     .package-container{
         flex-direction: column;
         align-items: center;
@@ -301,7 +302,6 @@
 
     .menu_sec {
         padding: 24px;
-        margin-top: 108px;
         margin-bottom: 32px;
     }
 
@@ -775,5 +775,17 @@
     }
     .vl{
         display: none;
+    }
+    .display-section .ovf>div{
+    width: 80vw;
+    } 
+    .display-section img{
+    width: 80vw;
+    }  
+    .display-section{
+    padding: 60px 0px 60px 0px;
+    }
+    .hp-title h3, .menu-title>h1{
+        font-size: 32px!important;
     }
 }
