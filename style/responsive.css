@@ -122,6 +122,9 @@
     header .logo>div {
         display: block;
         height: 30px;
+        position: fixed;
+        left: 24px;
+        width: 0px;
     }
 
     nav {
@@ -173,6 +176,9 @@
     .contents ul li {
         font-size: 14px;
     }
+    .pkg {
+        margin-bottom: 100px;
+    }
     .package-container {
         display: flex;
         gap: 16px;
@@ -222,8 +228,14 @@
     .about-main a{
         text-align: center;
     }
+    .testimonial-section {
+        margin-top: 32px;
+    }
     .overflow-vertical-hidden .cards{
-        margin: 40px 0px 0px 0px;
+        margin: 24px 0px 0px 0px;
+    }
+    .right-hero .cards{
+        margin-bottom: 24px;
     }
     .enlarged-image.active{
         width: 70%;
@@ -660,6 +672,8 @@
     }
     .logo a{
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
     .foot-top{
         display: grid;
