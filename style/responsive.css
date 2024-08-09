@@ -172,6 +172,9 @@
     .contents ul li {
         font-size: 14px;
     }
+    .pkg {
+        margin-bottom: 100px;
+    }
     .package-container {
         display: flex;
         gap: 16px;
