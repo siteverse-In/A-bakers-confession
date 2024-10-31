@@ -1046,5 +1046,18 @@ button.next {
 .testimonial-section {
     margin-top: 132px;
 }
+.pdfbtn{
+    background-color: #000;
+    border-radius: 4px;
+    padding: 15px 51px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    height: 62px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin: 16px auto;
+}
 /* menu section cmt */
 

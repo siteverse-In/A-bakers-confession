@@ -435,7 +435,15 @@
         });
         window.addEventListener("load", function() {
             // Your code here
-            console.log(document.querySelector(".ml-form-successContent"),"sucess-content")
+            const link = document.createElement('a');
+            link.href = './packages/pdf/Wedding-Packages-2025.pdf';
+            link.download = 'Wedding-Packages-2025.pdf';
+            link.classList.add('pdfbtn');
+            link.textContent = "View new Cakes";
+            
+            const thanksdiv=document.querySelector(".ml-form-successContent")
+            thanksdiv.body.appendChild(link);
+            console.log(thanksdiv,"sucess-content")
             console.log("DOM is fully loaded and parsed.");
         });
 
