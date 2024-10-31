@@ -402,38 +402,44 @@
 <!-- End MailerLite Universal -->
      <script>
         document.addEventListener('DOMContentLoaded', () => {
-    const sliders = document.querySelectorAll('.slider');
+            const sliders = document.querySelectorAll('.slider');
 
-    sliders.forEach(slider => {
-        let currentIndex = 0;
-        const slides = slider.querySelectorAll('.slides img');
-        const prevButton = slider.querySelector('.prev');
-        const nextButton = slider.querySelector('.next');
+            sliders.forEach(slider => {
+                let currentIndex = 0;
+                const slides = slider.querySelectorAll('.slides img');
+                const prevButton = slider.querySelector('.prev');
+                const nextButton = slider.querySelector('.next');
 
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.style.display = i === index ? 'block' : 'none';
+                function showSlide(index) {
+                    slides.forEach((slide, i) => {
+                        slide.style.display = i === index ? 'block' : 'none';
+                    });
+                }
+
+                function showNextSlide() {
+                    currentIndex = (currentIndex + 1) % slides.length;
+                    showSlide(currentIndex);
+                }
+
+                function showPrevSlide() {
+                    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                    showSlide(currentIndex);
+                }
+
+                nextButton.addEventListener('click', showNextSlide);
+                prevButton.addEventListener('click', showPrevSlide);
+
+                // Initially display the first slide
+                showSlide(currentIndex);
             });
-        }
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+            // Your code here
+            console.log(document.querySelector(".ml-form-successContent"),"sucess-content")
+            console.log("DOM is fully loaded and parsed.");
+        });
 
-        function showNextSlide() {
-            currentIndex = (currentIndex + 1) % slides.length;
-            showSlide(currentIndex);
-        }
-
-        function showPrevSlide() {
-            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-            showSlide(currentIndex);
-        }
-
-        nextButton.addEventListener('click', showNextSlide);
-        prevButton.addEventListener('click', showPrevSlide);
-
-        // Initially display the first slide
-        showSlide(currentIndex);
-    });
-});
-        console.log(document.querySelector(".ml-form-successContent"),"sucess-content")
+        
      </script>
      <script src="./js/nav.js"></script>
 </body>
