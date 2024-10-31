@@ -1047,17 +1047,19 @@ button.next {
     margin-top: 132px;
 }
 .pdfbtn{
+    display: block;
+    width: fit-content;
     background-color: #000;
     border-radius: 4px;
-    padding: 15px 51px;
+    padding: 12px 51px;
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     border: none;
-    height: 62px;
+    /* height: 62px; */
     text-transform: uppercase;
     white-space: nowrap;
-    margin: 16px auto;
+    margin: 16px 0px;
 }
 /* menu section cmt */
 
