@@ -38,33 +38,11 @@
         padding-top: 32px;
         padding-bottom: 32px;
     }
-    .contact-section .con-form{
-        width: 400px;
-    }
-    .contact-section .con-details{
-        width: 50%;
-    }
-    .contact-section {
-        max-width: 1400px;
-        margin: 0 auto;
-        margin-top: 140px;
-        margin-bottom: 100px;
-        display: flex;
-        gap: 32px;
-    }
+   
     .con-details>*{
         text-align: right;
     }
-    .con-details h3{
-        color: #000;
-        font-family: International;
-        font-size: 52.369px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 112.664%;
-        text-transform: uppercase;
-        margin-top: 36px;
-    }
+   
 }
 
 @media (max-width:999px) {

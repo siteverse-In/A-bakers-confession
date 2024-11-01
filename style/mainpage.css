@@ -211,11 +211,63 @@ textarea {
     line-height: normal;
     letter-spacing: 0.32px;
 }
-.ml-embedded{
+.con-form{
     box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);
     padding: 16px 24px;
     border-radius: 18px;
 }
+.con-form.popup-active .sub-contain{
+    box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);
+    padding: 16px 24px;
+    border-radius: 18px;
+    background-color: #fff;
+}
+
+.con-form.popup-active .blur-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe-close{
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    
+}
+ .con-details h3{
+        color: #000;
+        font-family: International;
+        font-size: 52.369px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 112.664%;
+        text-transform: uppercase;
+        margin-top: 36px;
+    }
+     .contact-section .con-form{
+        max-width: 400px;
+    }
+    .contact-section .con-details{
+        width: 50%;
+    }
+    .contact-section {
+        max-width: 1400px;
+        margin: 0 auto;
+        margin-top: 140px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        position: relative;
+        z-index:1;
+    }
 /*end*/
 
 /*testimonial section*/

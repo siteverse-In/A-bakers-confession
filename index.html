@@ -97,7 +97,11 @@
                         Fondant and Sugar work, cupcakes and sweet treats. Every cake I create tastes as good as it
                         looks.
                     </p>
-                    <a href="/#packages"><button class="outline-btn mt-32">OUR PACKAGES</button></a>
+                    <div class="twin-btn">
+                        <a href="/#packages"><button class="outline-btn mt-32">OUR PACKAGES</button></a>
+                        <button class="outline-btn subscribe-form mt-32 ml-8">View Brochure</button>
+                    </div>
+                    
                 </div>
                 <div class="right-hero d-flex flex-column">
                     <div class="cards ">
@@ -394,8 +398,15 @@
                     </div>
                 </div>
                 <div class="con-form">
-                    <div class="ml-embedded" data-form="wbOAt4">
-                </div>
+                    <div class="blur-background">
+                        <div class="sub-contain">
+                            <span class="subscribe-close">
+                                X
+                            </span>
+                            <div class="ml-embedded" data-form="wbOAt4">
+                            </div>
+                        </div>
+                    </div>
             </div>
             </section>
             
@@ -469,6 +480,17 @@
             console.log(thanksdiv,"sucess-content")
             console.log("DOM is fully loaded and parsed.");
         });
+
+        document.querySelector('.subscribe-form').addEventListener('click', function() {
+            document.querySelector('.con-form').classList.add('popup-active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        document.querySelector('.subscribe-close').addEventListener('click', function() {
+            document.querySelector('.con-form').classList.remove('popup-active');
+            document.body.style.overflow = 'auto';
+        });
+
     </script>
     <script src="./js/nav.js"></script>
 </body>
