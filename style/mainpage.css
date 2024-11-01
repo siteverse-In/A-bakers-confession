@@ -239,7 +239,10 @@ textarea {
     float: right;
     font-size: 24px;
     cursor: pointer;
-    
+    display: none;
+}
+.con-form.popup-active .subscribe-close{
+    display: block;
 }
  .con-details h3{
         color: #000;
