@@ -211,7 +211,11 @@ textarea {
     line-height: normal;
     letter-spacing: 0.32px;
 }
-
+.ml-embedded{
+    box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);
+    padding: 16px 24px;
+    border-radius: 18px;
+}
 /*end*/
 
 /*testimonial section*/

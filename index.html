@@ -379,19 +379,26 @@
             </section>
 
             <!---contact us--->
-            <section class="contact-section hp-title">
-                <div class="text-center">
-                    <h3>Contact us</h3>
-                    <span>If you have any questions, would like to submit a photo for a quote, or would like to book a
-                        cake
-                        tasting and consultation, please fill out and submit the contact form below, and we will contact
-                        you
-                        as soon as possible. Thank you!</span>
+            <section class="contact-section ">
+                <div class="con-details">
+                    <div >
+                        <h3>Contact us</h3>
+                        <span>If you have any questions, would like to submit a photo for a quote, or would like to book a
+                            cake
+                            tasting and consultation, please fill out and submit the contact form below, and we will contact
+                            you
+                            as soon as possible. Thank you!</span>
+                    </div>
+                    <div class="text-center mt-40">
+                        <a href="contact.html"> <button class="outline-btn">Enquire now</button></a>
+                    </div>
                 </div>
-                <div class="text-center mt-40">
-                    <a href="contact.html"> <button class="outline-btn">Enquire now</button></a>
+                <div class="con-form">
+                    <div class="ml-embedded" data-form="wbOAt4">
                 </div>
+            </div>
             </section>
+            
             </div>
 
         <!---footer--->
@@ -430,7 +437,7 @@
                         <div>
                             <ul>
                                 <li><a href="testimonial.html">Testimonials</a></li>
-<li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
                                 <li><a href="terms-and-condition.html">Terms & Conditions</a></li>
                             </ul>
                         </div>
@@ -439,6 +446,30 @@
             </div>
         </footer>
     </div>
+    <!-- MailerLite Universal -->
+    <script>
+        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        ml('account', '1063999');
+    </script>
+    <!-- End MailerLite Universal -->
+    <script>
+        window.addEventListener("load", function() {
+            // Your code here
+            const link = document.createElement('a');
+            link.href = `./packages/pdf/Wedding-Package-2025.pdf`;
+            link.download = 'Wedding-Packages-2025.pdf';
+            link.classList.add('pdfbtn');
+            link.textContent = "View new Cakes";
+            
+            const thanksdiv=document.querySelector(".ml-form-successContent")
+            thanksdiv.appendChild(link);
+            console.log(thanksdiv,"sucess-content")
+            console.log("DOM is fully loaded and parsed.");
+        });
+    </script>
     <script src="./js/nav.js"></script>
 </body>
 
