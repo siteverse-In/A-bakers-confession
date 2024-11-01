@@ -156,6 +156,15 @@
     .pkg-div{
         gap:16px !important;
     }
+    .con-details>*{
+        text-align: center;
+    }
+    .contact-section .con-details {
+        width: 100%;
+    }
+    .con-details h3{
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 630px) {
