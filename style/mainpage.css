@@ -927,6 +927,10 @@ button.next {
     width: fit-content;
     margin: 0px auto;
 }
+.about-box .prof{
+    box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);
+    height: 336px;
+}
 .price {
     font-weight: bold;
     margin: 20px 0;
