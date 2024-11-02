@@ -277,7 +277,11 @@
                     </div>
                 </div>
 
-            </div> 
+            </div>
+            <div class="brochure">
+                <p class="text-center">Take a look on our WEDDING CAKE PACKAGES by downloading our Brochure</p>
+                <button class="outline-btn subscribe-form mt-32 " >View Brochure</button>
+            </div>
 
             
             <div class="m-sec" id="enhance">
@@ -341,7 +345,17 @@
                     </a>
                 </div>
                 <div class="mt-64">
-                    <div class="ml-embedded" data-form="wbOAt4"></div>
+                    <div class="con-form brochure-form">
+                        <div class="blur-background">
+                            <div class="sub-contain">
+                                <span class="subscribe-close">
+                                    X
+                                </span>
+                                <div class="ml-embedded" data-form="wbOAt4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div> 
             
@@ -439,7 +453,7 @@
             link.href = `./packages/pdf/Wedding-Package-2025.pdf`;
             link.download = 'Wedding-Packages-2025.pdf';
             link.classList.add('pdfbtn');
-            link.textContent = "View new Cakes";
+            link.textContent = "View Brochure";
             
             const thanksdiv=document.querySelector(".ml-form-successContent")
             thanksdiv.appendChild(link);
@@ -448,6 +462,16 @@
         });
 
         
+        document.querySelector('.subscribe-form').addEventListener('click', function() {
+            document.querySelector('.con-form').classList.add('popup-active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        document.querySelector('.subscribe-close').addEventListener('click', function() {
+            document.querySelector('.con-form').classList.remove('popup-active');
+            document.body.style.overflow = 'auto';
+        });
+
      </script>
      <script src="./js/nav.js"></script>
 </body>

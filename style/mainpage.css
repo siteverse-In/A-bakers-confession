@@ -909,6 +909,24 @@ button.next {
     font-weight: 300;
     font-family: Heebo;
 } 
+.brochure{
+    padding-top: 80px;
+}
+.brochure p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Heebo;
+    font-style: oblique;
+}
+.brochure button{
+    display: block;
+    margin: 0 auto;
+}
+.brochure-form{
+    width: fit-content;
+    margin: 0px auto;
+}
 .price {
     font-weight: bold;
     margin: 20px 0;
