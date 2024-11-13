@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You - A Baker's Confession</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Heebo', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fafafa;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        .thank-you {
+            max-width: 600px;
+            padding: 40px;
+            background-color: #ffffff;
+            border: 1px solid #eaeaea;
+            border-radius: 10px;
+            animation: fadeIn 1s ease-out;
+        }
+        .thank-you h1 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 16px;
+            color: #333;
+        }
+        .thank-you p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 24px;
+        }
+        .thank-you a {
+            display: inline-block;
+            margin: 8px 0;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 30px;
+            font-family: 'International', sans-serif;
+            font-size: 14px;
+            width: fit-content;
+            border: 0.711px solid #000;
+            padding: 23px 51px;
+            background-color: transparent;
+            color: #000000;
+            margin-bottom: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .thank-you a:hover {
+            background-color: #AC4D6F;
+            border-color: #AC4D6F;
+            color: #fff;
+        }
+        
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you">
+        <h1>Thank you for your subscription!</h1>
+        <p>You can download your packages by clicking the link below:</p>
+        <a href="your-download-link" class="download-button">Download My Packages</a>
+        <p>If you want to schedule a call, please click the button below:</p>
+        <a href="https://calendly.com/abakersconfession/15min" class="book-call-button">Book a Call</a>
+    </div>
+</body>
+</html>
