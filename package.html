@@ -61,8 +61,47 @@
             max-width: 480px!important;
         }
     </style>
+    <style>
+        .sale-container {
+            position: fixed;
+            top: 129px;
+            background-color: black;
+            color: white;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            z-index: 99999;
+        }
+        .sale-content {
+            display: inline-block;
+            animation: scroll 18s linear infinite;
+            padding-left: 100%;
+        }
+        @keyframes scroll {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+        @media (max-width: 580px) {
+            .sale-container {
+                top: 105px;
+                height: 40px;
+                line-height: 40px;
+            }
+            .sale-content {
+                animation: scroll 18s linear infinite;
+            }
+            
+        }
+    </style>
 </head>
-
+<div class="sale-container">
+    <div class="sale-content">
+        🔥 Black Friday Sale - Offer Live Now! - Huge Discounts Available 🔥 Black Friday Sale - Offer Live Now! - Huge Discounts Available 🔥
+        🔥 Black Friday Sale - Offer Live Now! - Huge Discounts Available 🔥 Black Friday Sale - Offer Live Now! - Huge Discounts Available 🔥
+    </div>
+</div>
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D7GDNQK"
@@ -87,9 +126,9 @@
             </div>
         </header>
 
-        <div class="mt-64 mb-64 ga-sec">
+        <div class="mt-64 mb-64 ga-sec" style="margin-top:122px;">
 
-            <div class="package-section w-900">
+            <div class="package-section w-900 " >
                 <h1>Our <span class="pc-color">PACKAGES</span></h1>
                 <p class="text-center w-760 pb-16">
                     At A Baker’s Confession, We specialize in crafting exquisite wedding cakes that are as delightful to

@@ -51,6 +51,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<style>
+        .sale-container {
+            position: fixed;
+            top: 129px;
+            background-color: black;
+            color: white;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            z-index: 99999;
+        }
+        .sale-content {
+            display: inline-block;
+            animation: scroll 18s linear infinite;
+            padding-left: 100%;
+        }
+        @keyframes scroll {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+        @media (max-width: 580px) {
+            .sale-container {
+                top: 105px;
+                height: 40px;
+                line-height: 40px;
+            }
+            .sale-content {
+                animation: scroll 18s linear infinite;
+            }
+            
+        }
+    </style>
 </head>
 
 <body>
@@ -95,8 +129,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </nav>
             </div>
         </header>
+            <div class="sale-container">
+                <div class="sale-content">
+                    🔥 Black Friday Sale - Offer Live Now! - Huge Discounts Available 🔥 Black Friday Sale - Offer Live Now! - Huge Discounts Available 🔥
+                    🔥 Black Friday Sale - Offer Live Now! - Huge Discounts Available 🔥 Black Friday Sale - Offer Live Now! - Huge Discounts Available 🔥
+                </div>
+            </div>
         <main>
-            <section class="hero-section d-flex">
+            <section class="hero-section d-flex" style="margin-top: 84px;" >
                 <div class="left-hero">
                     
                     <h1 class="mb-20 mt-32">Bespoke wedding and Celebration Cakes</h1>
