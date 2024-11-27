@@ -46,7 +46,7 @@
             color: #666;
             margin-bottom: 24px;
         }
-        .thank-you a {
+        .thank-you .book-call-button{
             display: inline-block;
             margin: 8px 0;
             text-decoration: none;
@@ -63,12 +63,17 @@
             margin-bottom: 16px;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
-        .thank-you a:hover {
+        .thank-you .book-call-button:hover {
             background-color: #AC4D6F;
             border-color: #AC4D6F;
             color: #fff;
         }
-        
+        .brochure-link{
+            font-style: italic;
+            color: #000;
+            display: inline-block;
+            margin: 16px auto;
+        }
 
         /* Animation */
         @keyframes fadeIn {
@@ -86,8 +91,8 @@
 <body>
     <div class="thank-you">
         <h1>Thank you for your subscription!</h1>
-        <p style="font-style: italic;">
-    Check your mail for brochure.pdf</p>
+        <a href="https://drive.google.com/file/d/1fhP70FCbkHspG7NeeVE0It3MrH9PooTq/view" class="brochure-link">
+        Click here for brochure.pdf</a>
        
         <p>If you want to schedule a call, please click the button below:</p>
         <a href="https://calendly.com/abakersconfession/15min" class="book-call-button">Book a Call</a>
