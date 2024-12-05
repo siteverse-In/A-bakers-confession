@@ -597,7 +597,12 @@ button {
     /* box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30); */
 
 }
-
+.vid-card{
+        padding: 13px 12.5px 0px 12.5px;
+        border: 0.874px solid #FFF;
+        background: linear-gradient(137deg, #FFF 0%, #FFF 100%);
+        box-shadow: 35.50142px 19.56201px 67.38026px 0px rgba(87, 87, 87, 0.30);
+    }
 body.left {
     transition: transform 150ms ease-in-out;
     animation: loadleft 150ms ease-in-out 1;
